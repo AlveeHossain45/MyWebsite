@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>
-    const correctPassword = "AlveeandSami12345"; // 
-    let enteredPassword = prompt("Access Password :");
-  
-    if (enteredPassword !== correctPassword) {
-      alert("Wrong pass");
-      window.location.href = "about:blank";
-    }
-  </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvee Hossain | Software Engineer & Cybersecurity Enthusiast</title>
@@ -558,6 +550,66 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#goals">Goals</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="admin.html" class="admin-link">
+                      <i class="fas fa-lock"></i> Admin
+                    </a>
+                  </li>
+                  
+                  <style>
+                    .admin-link {
+                      display: inline-block;
+                      padding: 14px 24px;
+                      background: linear-gradient(135deg, #1abc9c, #16a085); /* Aqua Green Gradient */
+                      color: white;
+                      font-size: 18px;
+                      font-weight: bold;
+                      text-decoration: none;
+                      border-radius: 12px;
+                      box-shadow:
+                        0 8px 15px rgba(22, 160, 133, 0.4),
+                        inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+                      transition: all 0.4s ease;
+                      transform: perspective(800px) translateZ(4px);
+                      letter-spacing: 0.5px;
+                      position: relative;
+                    }
+                  
+                    .admin-link::before {
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 12px;
+                      background: linear-gradient(145deg, rgba(255,255,255,0.2), transparent);
+                      opacity: 0;
+                      transition: opacity 0.3s ease;
+                    }
+                  
+                    .admin-link:hover::before {
+                      opacity: 1;
+                    }
+                  
+                    .admin-link:hover {
+                      background: linear-gradient(135deg, #16a085, #1abc9c);
+                      transform: scale(1.07) translateY(-5px);
+                      box-shadow:
+                        0 12px 25px rgba(22, 160, 133, 0.5),
+                        inset 0 2px 5px rgba(255, 255, 255, 0.1);
+                    }
+                  
+                    .admin-link i {
+                      margin-right: 10px;
+                    }
+                  </style>
+                  
+                  <!-- Font Awesome CDN -->
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                  
+                    
+                
             </ul>
             <div class="hamburger">
                 <div></div>
